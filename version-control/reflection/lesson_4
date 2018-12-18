@@ -1,0 +1,33 @@
+왜 local에 먼저 저장을 하고 remote로 github로 전송하는게
+지침이냐고 묻는 듯 하다.
+
+그냥 github에 저장을 게속 해도 되는대도 말이다.. .
+
+글쎄, 왜일까
+권한 부여에 관한 것인듯 한데,,
+
+누군가가 remote repository의 내용을 바꿀 수가 있기에,
+담보.일종의 back-up이 아닐까.. . 자신이 한걸 확실히 아려는.. .
+
+공유가 야기시키는 문제로 인해.
+
+----------------
+fork, clone, branches
+
+fork는 github에 있는 누군가의 파일을 내 저장소에 끌어오는거고,
+저장소에서 local computer에 내려받으려할 떄 clone을 쓴다..
+
+branches는 왜 언급이 되었는지 모르겠네
+
+
+---------------------
+어디에서 작업하는가에 따라 remote(origin/master)와 local(master)에 
+있는 파일에 서로 차이가 나기 시작한다..
+
+그리고 2명 이상이 하나의 파일에서 작업하여, 각각 수정을 저장하면
+remote에 있는 파일을 local로 당기면, local에 있던 같은 파일이나 
+다른 내용으로 서로 충돌한다..
+
+하나를 선택헤서 commit을 하고, 그걸 다시 remote로 올린다.. .
+
+push는 fetch + merge.. / 
